@@ -1,0 +1,38 @@
+MainV1
+Vanilla Version
+
+MainV2
+Penambahan Servo pada system dan source code
+
+MainV3
+Modularisasi Function Main
+
+MainV3_2
+Modularisasi Function Setup
+
+MainV3_3
+Penambahan LCD sebagai UI
+
+MainV4
+Penambahan Servo ke source code
+
+MainV4B
+Penambahan Button ke System untuk mengatur RTC
+
+MainV5
+Penambahan SD Card untuk logging
+
+MainV5A
+Penambahan Error correction (LED)
+
+MainV6
+Pengurangan RTC, LCD, dan Button pada system dan source code
+
+MainV6B
+Penambahan IRSensor pada system dan source code untuk error correction
+
+MainV7
+Penggabungan function errorCorrection dengan loggingFile
+
+DeployBuild
+Final Version
