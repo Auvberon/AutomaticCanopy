@@ -26,7 +26,7 @@ MainV5A
 Penambahan Error correction (LED)
 
 MainV6
-Pengurangan RTC, LCD, dan Button pada system dan source code
+Pengurangan RTC, LCD, dan Button pada system dan source code, simplifikasi sistem
 
 MainV6B
 Penambahan IRSensor pada system dan source code untuk error correction
