@@ -54,68 +54,68 @@ void loop()
 }
 
 void errorCorrection(){
-//  myFile = SD.open("logging.txt", FILE_WRITE);
-// 
-//  int sensorState = digitalRead(9);
-//  if (sensorState == HIGH && servo.read() == 130){ //IR baca, tapi servo buka
-//    if(getLightInstensity() == -2 || getLightInstensity() == -1){
-//        digitalWrite(5, HIGH);
-//        digitalWrite(7, HIGH);        
-//        myFile.print(getLightInstensity());
-//        myFile.print(F("||"));    
-//        myFile.print(RainModule());
-//        myFile.print(F("||"));
-//        myFile.println(F("er-04"));
-//        myFile.close(); // close the file
-//      }
-//      else{
-//        digitalWrite(7, HIGH);     
-//        digitalWrite(5, LOW);    
-//        myFile.print(getLightInstensity());
-//        myFile.print(F("||"));    
-//        myFile.print(RainModule());
-//        myFile.print(F("||"));
-//        myFile.println(F("er-01"));
-//        myFile.close(); // close the file
-//      }
-//  }
-//  else if (sensorState == LOW && servo.read() == 0){
-//    if(getLightInstensity() == -2 || getLightInstensity() == -1){
-//        digitalWrite(5, HIGH);
-//        digitalWrite(7, HIGH);        
-//        myFile.print(getLightInstensity());
-//        myFile.print(F("||"));    
-//        myFile.print(RainModule());
-//        myFile.print(F("||"));
-//        myFile.println(F("er-05"));
-//        myFile.close(); // close the file
-//      }
-//      else{
-//        digitalWrite(7, HIGH);  
-//        digitalWrite(5, LOW);   
-//        myFile.print(getLightInstensity());
-//        myFile.print(F("||"));    
-//        myFile.print(RainModule());
-//        myFile.print(F("||"));
-//        myFile.println(F("er-02"));
-//        myFile.close(); // close the file
-//      }
-//  }
-//  else if(getLightInstensity() == -2 || getLightInstensity() == -1){
-//    digitalWrite(5, HIGH);  
-//    digitalWrite(7, LOW);     
-//    myFile.print(getLightInstensity());
-//    myFile.print(F("||"));    
-//    myFile.print(RainModule());
-//    myFile.print(F("||"));
-//    myFile.println(F("er-03"));
-//    myFile.close(); // close the file
-//  }
-//  else{
-//    digitalWrite(5, LOW);  
-//    digitalWrite(7, LOW);
-//  }
-//  delay(500);
+ myFile = SD.open("logging.txt", FILE_WRITE);
+
+ int sensorState = digitalRead(9);
+ if (sensorState == HIGH && servo.read() == 130){ //IR baca, tapi servo buka
+   if(getLightInstensity() == -2 || getLightInstensity() == -1){
+       digitalWrite(5, HIGH);
+       digitalWrite(7, HIGH);        
+       myFile.print(getLightInstensity());
+       myFile.print(F("||"));    
+       myFile.print(RainModule());
+       myFile.print(F("||"));
+       myFile.println(F("er-04"));
+       myFile.close(); // close the file
+     }
+     else{
+       digitalWrite(7, HIGH);     
+       digitalWrite(5, LOW);    
+       myFile.print(getLightInstensity());
+       myFile.print(F("||"));    
+       myFile.print(RainModule());
+       myFile.print(F("||"));
+       myFile.println(F("er-01"));
+       myFile.close(); // close the file
+     }
+ }
+ else if (sensorState == LOW && servo.read() == 0){
+   if(getLightInstensity() == -2 || getLightInstensity() == -1){
+       digitalWrite(5, HIGH);
+       digitalWrite(7, HIGH);        
+       myFile.print(getLightInstensity());
+       myFile.print(F("||"));    
+       myFile.print(RainModule());
+       myFile.print(F("||"));
+       myFile.println(F("er-05"));
+       myFile.close(); // close the file
+     }
+     else{
+       digitalWrite(7, HIGH);  
+       digitalWrite(5, LOW);   
+       myFile.print(getLightInstensity());
+       myFile.print(F("||"));    
+       myFile.print(RainModule());
+       myFile.print(F("||"));
+       myFile.println(F("er-02"));
+       myFile.close(); // close the file
+     }
+ }
+ else if(getLightInstensity() == -2 || getLightInstensity() == -1){
+   digitalWrite(5, HIGH);  
+   digitalWrite(7, LOW);     
+   myFile.print(getLightInstensity());
+   myFile.print(F("||"));    
+   myFile.print(RainModule());
+   myFile.print(F("||"));
+   myFile.println(F("er-03"));
+   myFile.close(); // close the file
+ }
+ else{
+   digitalWrite(5, LOW);  
+   digitalWrite(7, LOW);
+ }
+ delay(500);
 }
 
 int RainModule(){ 
