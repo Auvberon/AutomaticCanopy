@@ -34,5 +34,9 @@ Penambahan IRSensor pada system dan source code untuk error correction
 MainV7
 Penggabungan function errorCorrection dengan loggingFile
 
-DeployBuild
+DeployBuild [REDACTED]
+Final Version yang tidak dipakai, masih terdapat bug pada error correction
+
 Final Version
+PresentationBuild -> Untuk presentasi, nilai threshold Light Intensity Sensor 1.000 lx
+DeployBuild -> Untuk dipakai oleh umum, nilai threshold Light Intensity Sensor 30.000 lx
